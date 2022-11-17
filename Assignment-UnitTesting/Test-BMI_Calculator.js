@@ -7,12 +7,11 @@ function bmiCalc(weight, height){ // weight in KG and height in Meter
   
   function testResult(result){ // Test if the result will equal to given result
     if(result == 20.1){
-        console.log('The test result passed');
+        console.log('The test result passed!');
     }else{
-        console.log('The test result failed');
+        console.log('The test result failed!');
     }
   }
-
-  var bmiCalcResult = bmiCalc(65, 1.8);
-  console.log(bmiCalcResult);
-  testResult(bmiCalcResult);
+    var bmiCalcResult = bmiCalc(65, 1.8);
+    console.log(bmiCalcResult);
+    testResult(bmiCalcResult);
