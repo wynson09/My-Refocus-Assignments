@@ -1,0 +1,20 @@
+{
+  "name": "assignment",
+  "version": "0.0.1",
+  "description": "My automated testing for BMI calculator",
+  "main": "bmi-calculator.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wynson09/My-Refocus-Assignments.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wynson09/My-Refocus-Assignments/issues"
+  },
+  "homepage": "https://github.com/wynson09/My-Refocus-Assignments#readme"
+}
