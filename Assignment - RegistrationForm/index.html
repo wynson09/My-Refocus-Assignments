@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form name="signup" id="signup-form">
+        <div class="align-center">
+            <div class="header">
+                <h1>Sign up</h1>
+            </div>
+            <div class="container">
+                    <div class="section">
+                        <div id="error" class="arrange-style">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstnameField" placeholder="Your name..">
+                        </div>
+                        <div id="error" class="arrange-style">
+                            <label for="mname">Middle Name</label>
+                            <input type="text" id="mname" name="middlenameField" placeholder="Your middle name..">
+                        </div>
+                        <div id="error" class="arrange-style">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastnameField" placeholder="Your last name..">
+                        </div>
+                        <div id="error" class="arrange-style">
+                            <label for="birthday">Birthday</label>
+                            <input type="date" id="birthday" name="birthdayField">
+                        </div>
+                        <div id="error" class="arrange-style">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="emailField" placeholder="Your email address..">
+                        </div>
+                        <div id="error" class="arrange-style">
+                            <label for="country">Region</label>
+                            <select id="region" name="region">
+                                <option disabled="disabled" selected="selected">Choose option</option>
+                                <option value="Region I Ilocos Region">Region I Ilocos Region</option>
+                                <option value="Region II Cagayan Valley">Region II Cagayan Valley</option>
+                                <option value="Region III Central Luzon">Region III Central Luzon</option>
+                                <option value="Region IV-A CALABARZON">Region IV-A CALABARZON</option>
+                                <option value="MIMAROPA Region">MIMAROPA Region</option>
+                                <option value="Region V Bicol Region">Region V Bicol Region</option>
+                                <option value="Region VI Western Visayas">Region VI Western Visayas</option>
+                                <option value="Region VII Central Visayas">Region VII Central Visayas</option>
+                                <option value="Region VIII Eastern Visayas">Region VIII Eastern Visayas</option>
+                                <option value="Region IX Zamboanga Peninsula">Region IX Zamboanga Peninsula</option>
+                                <option value="Region X Northern Mindanao">Region X Northern Mindanao</option>
+                                <option value="Region XI Davao Region">Region XI Davao Region</option>
+                                <option value="Region XII SOCCSKSARGEN">Region XII SOCCSKSARGEN</option>
+                                <option value="Region XIII Caraga">Region XIII Caraga</option>
+                                <option value="NCR National Capital Region">NCR National Capital Region</option>
+                                <option value="CAR Cordillera Administrative Region">CAR Cordillera Administrative Region</option>
+                                <option value="BARMM Bangsamoro Autonomous Region in Muslim Mindanao">BARMM Bangsamoro Autonomous Region in Muslim Mindanao</option>
+                            </select>
+                        </div>
+                        <div id="error" class="arrange-style">
+                            <label for="province">Province</label>
+                            <input type="text" id="province" name="provinceField" placeholder="Your province..">
+                        </div>
+                        <div id="error" class="arrange-style">
+                            <label for="barangay">Barangay</label>
+                            <input type="text" id="barangay" name="barangayField" placeholder="Your barangay..">
+                        </div>
+                        <div id="error" class="arrange-style">
+                            <label for="street">Street</label>
+                            <input type="text" id="street" name="Street" placeholder="Your street">
+                        </div>
+                        <div>
+                            <div id="error" class="gender">
+                                <label class="gender-label">Gender</label>
+                                <div class="gender-radio">
+                                    <label>
+                                        <input type="radio" checked="checked" name="gender">
+                                        <span class="checkmark"></span>
+                                        <label class="male">Male</label>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="gender">
+                                        <span class="checkmark"></span>
+                                        <label class="female">Female</label>
+                                    </label>
+                                    <label>
+                                        <span class="checkmark"></span>
+                                        <input type="radio" name="gender">
+                                        <label class="others">Others</label>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="error" class="arrange-style">
+                            <label for="vaccine1">Vaccination Brand (Dose 1)</label>
+                            <select id="vaccine1" name="Vaccine1">
+                                <option disabled="disabled" selected="selected">Choose option</option>
+                                <option value="Pfizer BioNTech">Pfizer BioNTech</option>
+                                <option value="AstraZeneca">AstraZeneca</option>
+                                <option value="Coronavac">Coronavac</option>
+                                <option value="Sputnik V">Sputnik V</option>
+                                <option value="Janssen">Janssen</option>
+                                <option value="Covaxin">Covaxin</option>
+                                <option value="Moderna">Moderna</option>
+                                <option value="Sinopharm">Sinopharm</option>
+                                <option value="Covovax">Covovax</option>
+                            </select>
+                        </div>
+                        <div id="error" class="arrange-style">
+                            <label for="vaccine-date1">Date of Vaccination (Dose 1)</label>
+                            <input type="date" id="vaccine-date1" name="vaccine-date1">
+                        </div>
+                        <div id="error" class="arrange-style">
+                            <label for="vaccine-site1">Vaccination (Dose 1) Site</label>
+                            <input type="text" id="vaccine-site1" name="vaccine-site1Field" placeholder="Vaccination site..">
+                        </div>
+                        <div>
+                            <div class="Second-dose">
+                                <label class="Second-dose-label">Did you already get your second vaccination? </label>
+                                <div class="Second-dose-radio">
+                                    <label>
+                                        <input type="radio" name="second-dose" value="show" onclick="hideShowDiv(1)">
+                                        <span class="checkmark"></span>
+                                        <label class="second-dose-yes">Yes</label>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="second-dose" value="hide" onclick="hideShowDiv(2)">
+                                        <span class="checkmark"></span>
+                                        <label class="second-dose-no">No</label>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Div">
+                            <div id="error" class="arrange-style">
+                                <label for="vaccine2">Vaccination Brand (Dose 2)</label>
+                                <select id="vaccine2" name="Vaccine2">
+                                    <option disabled="disabled" selected="selected">Choose option</option>
+                                    <option value="Pfizer BioNTech">Pfizer BioNTech</option>
+                                    <option value="AstraZeneca">AstraZeneca</option>
+                                    <option value="Coronavac">Coronavac</option>
+                                    <option value="Sputnik V">Sputnik V</option>
+                                    <option value="Janssen">Janssen</option>
+                                    <option value="Covaxin">Covaxin</option>
+                                    <option value="Moderna">Moderna</option>
+                                    <option value="Sinopharm">Sinopharm</option>
+                                    <option value="Covovax">Covovax</option>
+                                </select>
+                            </div>
+                            <div id="error" class="arrange-style">
+                                <label for="vaccine-date2">Date of Vaccination (Dose 2)</label>
+                                <input type="date" id="vaccine-date2" name="vaccine-date2">
+                            </div>
+                            <div id="error" class="arrange-style">
+                                <label for="vaccine-site2">Vaccination (Dose 2) Site</label>
+                                <input type="text" id="vaccine-site2" name="vaccine-site2Field" placeholder="Vaccination site..">
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit" name="SubmitBtn" id="submitBtn">Submit</button>
+                            <button id="myBtn">Try it</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </form>
+</body>
+<script>
+    const form = document.forms.signup;
+    const firstname = form.firstnameField;
+    const middlename = form.middlenameField;
+    const lasttname = form.lastnameField;
+    const birthday = form.birthdayField;
+    const email = form.emailField;
+    const province = form.provinceField;
+    const barangay = form.barangayField;
+    const vaccineSite1 = form.vaccine-site1Field;
+    const vaccineSite2 = form.vaccine-site2Field;
+
+    document.getElementById("myBtn").addEventListener('click', function() {
+     alert("Hello World!");
+    });
+
+   form.addEventListener('submit', function(event){
+    event.preventDefault();
+
+    if (!firstnameField.value){
+        setError(firstnameField, 'Name is required!')
+    }
+
+   })
+
+    function setError(field, errorMsg){
+        field.style.borderColor = 'red';
+        document.getElementById('error' + field.name).innerText = errorMsg;
+    }
+
+    function hideShowDiv(value){
+        if(value == 1){
+            document.getElementById('Div').style.display='block';
+        } 
+        if(value == 2){
+            document.getElementById('Div').style.display='none';
+        }
+    }
+</script>
+</html>
